@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GivenBlackBox" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-02-04T19:51:30" hostname="LAPTOP-N2P7OJ01" time="0.01">
+  <properties/>
+  <testcase name="oneBearTest3clothings[0]" classname="GivenBlackBox" time="0.004"/>
+  <testcase name="threeBearsSaveOnCheapest[0]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearNoSavings[0]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearTest3clothings[1]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapest[1]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[1]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearTest3clothings[2]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapest[2]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[2]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearTest3clothings[3]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapest[3]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[3]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearTest3clothings[4]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapest[4]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[4]" classname="GivenBlackBox" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

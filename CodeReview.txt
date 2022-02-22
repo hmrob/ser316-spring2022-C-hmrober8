@@ -1,0 +1,24 @@
+Code Review:
+1. minor redundancy- instead of having only one constructor class, with a variable for passing, there are two; one default, one with the variable. It's in nearly every class.
+
+2. BearWorkshop has this but worse, in that it has a default constructor whose only function is to call a more specialized constructor with a string parameter
+
+3. overall, uses a lot of for loops instead of simple multiplication
+
+4. who formats like this? BearWorkshop, line 128; add and remove bear functions are needlessly complex and redundant; instead of if statements, hilaciously formatted ones, you could simply 'return this.BearCart.remove(bear)'
+
+5. Too many nested if statements instead of ifs with && or ||
+
+6 (bonus!). in Noisemaker, a switch statement is used when if/else would have worked fine.
+
+Implementation:
+To test the rule for 10% off cost of bear with ten or more accessories:
+
+My oneBearTest10Clothes() methods proved that the 10% off with 10 paid for clothes method interacted well with the buy 2 get one free clothes method in the first 3 classes, but flagged in the fourth and fifth. I got easter eggs 1, 7, 5, and 8.
+
+However, my oneBearTest10Noisemakers() methods proved that the method again worked on the first three classes but not on 4 and 5, oddly when it was noisemakers that were applied; the method took almost 2/3 of the price off the bear. For this one I got easter egg 3. 
+
+My oneBearTest10LetterEmbroidery() method failed on all tests. Are we not counting embroidery as accessories? I figured it fits the criteria of 'anything on the bear.' I didn't find any easter eggs for this method.
+
+To test the 
+
