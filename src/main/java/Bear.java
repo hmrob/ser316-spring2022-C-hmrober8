@@ -3,6 +3,13 @@ package main.java;
 import main.java.Stuffing.stuffing;
 import java.util.LinkedList;
 
+/**
+Class: Bear.java
+
+Description: Creates the bear object, and initializes variables for the additional items 
+that are possible to add to the bear. Also keeps track of a bear's price.
+*/
+
 public class Bear implements Comparable<Bear>{
     public Casing casing;
     public Stuffing stuff;
