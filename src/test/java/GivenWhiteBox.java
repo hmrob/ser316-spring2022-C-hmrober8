@@ -1,3 +1,4 @@
+package test.java;
 import main.java.*;
 
 import static org.junit.Assert.*;
@@ -5,7 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 
 import org.junit.Test;
-<<<<<<< HEAD:src/test/java/GivenWhiteBox.java
 
 import main.java.Bear;
 import main.java.BearWorkshop;
@@ -13,8 +13,6 @@ import main.java.Clothing;
 import main.java.Embroidery;
 import main.java.NoiseMaker;
 
-=======
->>>>>>> 434b79455e49f633438213e9ea75d3e1cbb1e87b:src/test/java/test/java/GivenWhiteBox.java
 import static org.junit.Assert.*;
 
 import main.java.BearWorkshop;
@@ -34,7 +32,8 @@ public class GivenWhiteBox {
         oneBear = new BearWorkshop("AZ");
         oneBear.addBear(new Bear());
         Double ans = oneBear.checkout();
-        assertEquals(5.35, ans, 0.005);
+        Double expected = 31 * 1.07;
+        assertEquals(expected, ans, 0.005);
     }
     
     @Test
@@ -107,6 +106,69 @@ public class GivenWhiteBox {
         
         //$39 + tax
         Double expected = 39 * 1.07;
+        assertEquals(expected, ans, 0.005);
+    }
+    
+    @Test
+    /**
+     * test of full node and edge coverage of getRawCost()
+     * complete code coverage
+     * bear has 3 clothing items, a noisemaker, and an embroidery
+     */
+    public void getRawCostFullCoverage() {
+        oneBear = new BearWorkshop("AZ");
+        
+        Bear newBear = new Bear(); //$31
+        
+        newBear.clothing.add(new Clothing(4, "Hat")); //$35
+	    newBear.clothing.add(new Clothing(4, "Sunglasses")); //$39
+	    newBear.clothing.add(new Clothing(4, "Shoes")); // $43 (no discount)
+	    
+	    newBear.noisemakers.add(new NoiseMaker()); //$53
+	    
+	    newBear.ink = (new Embroidery("Test")); //$57
+	    oneBear.addBear(newBear);
+        
+        Double ans = oneBear.checkout();
+        
+        //$57 + tax
+        Double expected = 53 * 1.07;
+        assertEquals(expected, ans, 0.005);
+    }
+    
+    @Test
+    /**
+     * test of full node and edge coverage of getRawCost()
+     * complete code coverage
+     * bear has 3 clothing items, a noisemaker, and an embroidery
+     */
+    public void checkoutUnderageParent() {
+        oneBear = new BearWorkshop("AZ");
+        oneBear.addBear(new Bear());
+        oneBear.setAge();
+        
+        Double ans = oneBear.checkout();
+        
+        //$57 + tax
+        Double expected = -1.0;
+        assertEquals(expected, ans, 0.005);
+    }
+    
+    @Test
+    /**
+     * test of full node and edge coverage of getRawCost()
+     * complete code coverage
+     * bear has 3 clothing items, a noisemaker, and an embroidery
+     */
+    public void checkoutSuccessful() {
+        oneBear = new BearWorkshop("AZ");
+        
+	    oneBear.addBear(new Bear());
+        
+        Double ans = oneBear.checkout();
+        
+        //$31 + tax
+        Double expected = 31 * 1.07;
         assertEquals(expected, ans, 0.005);
     }
 }

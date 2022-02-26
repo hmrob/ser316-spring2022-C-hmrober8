@@ -21,6 +21,13 @@ public class Customer {
 	public Customer(String state) {
 		this.state = state;
 		this.age = 18;
+		//added by Hannah to make checkout testing possible
+		this.parent = new Customer();
+	}
+	
+	//I want to check the undarage parent switch in BearWorkShip
+	public Customer() {
+		this.age = 18;
 	}
 
 	/**

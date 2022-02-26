@@ -169,6 +169,14 @@ public class BearWorkshop implements BearWorkshopInterface {
 	}
 
 	/**
+	 * age setter for customer and customer parent for testing purposes
+	 */
+	public void setAge() {
+		this.customer.age = 12;
+		//this.customer.parent.age = 16;
+	}
+	
+	/**
 	 * This method returns the savings for advertised bundle savings. Specifically,
 	 * - Bears are Buy 2 bears, get a third one free. It is always the cheapest bear
 	 * that is free. The price here is meant when all discounts for a single bear
