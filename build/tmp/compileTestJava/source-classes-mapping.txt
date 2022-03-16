@@ -1,4 +1,0 @@
-calculateSavingsTest.java
- test.java.calculateSavingsTest
-GivenWhiteBox.java
- test.java.GivenWhiteBox
