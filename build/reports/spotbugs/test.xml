@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta4" sequence="0" timestamp="1647549266879" analysisTimestamp="1647549266879" release="unspecified">
+  <Project projectName="Assignment4 (spotbugsTest)">
+    <Jar>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\build\classes\java\test\test\java\calculateSavingsTest.class</Jar>
+    <Jar>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\build\classes\java\test\test\java\GivenBlackBox.class</Jar>
+    <Jar>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\build\classes\java\test\test\java\GivenWhiteBox.class</Jar>
+    <AuxClasspathEntry>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\build\classes\java\main</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\build\resources\main</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\cls</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hannah\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hannah\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\src\test\resources</SrcDir>
+    <SrcDir>C:\Users\Hannah\Desktop\School\SPR 2022\SER 316\Assignment4\src\test\java</SrcDir>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="48a645552759c32b474ae7ac5f87273f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of oneBear in test.java.GivenBlackBox.buy2Get3ClothesDifferentPriceHiFirst() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="buy2Get3ClothesDifferentPriceHiFirst" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="101" end="119" startBytecode="0" endBytecode="269" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.buy2Get3ClothesDifferentPriceHiFirst()</Message>
+    </Method>
+    <LocalVariable name="oneBear" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from oneBear</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="108" end="108" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 108]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="101" end="101" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 101]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="104" end="104" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 104]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="71c130cc87e433539a22a7941542bcf2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of oneBear in test.java.GivenBlackBox.oneBearNoSavings() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearNoSavings" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="83" end="94" startBytecode="0" endBytecode="179" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearNoSavings()</Message>
+    </Method>
+    <LocalVariable name="oneBear" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from oneBear</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="89" end="89" startBytecode="24" endBytecode="24" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 89]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="83" end="83" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 83]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="86" end="86" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 86]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="a2267271ba22a536bcd9c529a4785958" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10Clothes() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10Clothes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="320" end="338" startBytecode="0" endBytecode="278" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10Clothes()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="327" end="327" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 327]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="320" end="320" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 320]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="323" end="323" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 323]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="38014883b1d2efe87acc116efc416abf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10ClothesDown() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10ClothesDown" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="343" end="361" startBytecode="0" endBytecode="278" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10ClothesDown()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="350" end="350" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 350]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="343" end="343" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 343]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="346" end="346" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 346]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="860b85e55b15ff9df6451b5aac841b6c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10ClothesFoam() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10ClothesFoam" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="366" end="384" startBytecode="0" endBytecode="278" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10ClothesFoam()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="373" end="373" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 373]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="366" end="366" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 366]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="369" end="369" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 369]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="c394861ded874171546a0f7e5e5239b4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10CustomNoisemakers() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10CustomNoisemakers" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="459" end="477" startBytecode="0" endBytecode="280" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10CustomNoisemakers()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="466" end="466" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 466]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="459" end="459" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 459]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="462" end="462" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 462]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="247886d94b9b96e1cacdb12d9b512f54" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10LetterEmbroidery() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10LetterEmbroidery" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="481" end="497" startBytecode="0" endBytecode="229" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10LetterEmbroidery()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="488" end="488" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 488]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="481" end="481" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 481]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="484" end="484" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 484]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="3dd202416aef6073dce9699379656dcf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10NoisemakersBase() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10NoisemakersBase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="389" end="407" startBytecode="0" endBytecode="273" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10NoisemakersBase()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="396" end="396" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 396]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="389" end="389" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 389]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="392" end="392" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 392]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="a05ef001f1243608ad72f190c5378387" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10NoisemakersDown() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10NoisemakersDown" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="411" end="430" startBytecode="0" endBytecode="273" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10NoisemakersDown()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="418" end="418" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 418]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="411" end="411" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 411]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="414" end="414" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 414]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="478bab41f93bc390da0e91ab7acf87a9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest10NoisemakersFoam() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest10NoisemakersFoam" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="435" end="454" startBytecode="0" endBytecode="273" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest10NoisemakersFoam()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="442" end="442" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 442]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="435" end="435" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 435]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="438" end="438" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 438]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="cfefeca9557b944423c9aafcb20d7751" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.GivenBlackBox.oneBearTest3clothings() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="oneBearTest3clothings" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="299" end="315" startBytecode="0" endBytecode="284" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.oneBearTest3clothings()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="306" end="306" startBytecode="26" endBytecode="26" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 306]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="299" end="299" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 299]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="302" end="302" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 302]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="47725e5c24578466462b9b070283d70e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.GivenBlackBox.threeBearsSaveOnCheapest() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="threeBearsSaveOnCheapest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="198" end="211" startBytecode="0" endBytecode="219" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.threeBearsSaveOnCheapest()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="204" end="204" startBytecode="24" endBytecode="24" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 204]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="198" end="198" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 198]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="201" end="201" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 201]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="bd93f87f7ab4bff69e0b1b0c91e9f85e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.GivenBlackBox.threeBearsSaveOnCheapestAccessories() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="threeBearsSaveOnCheapestAccessories" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="237" end="263" startBytecode="0" endBytecode="327" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.threeBearsSaveOnCheapestAccessories()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="246" end="246" startBytecode="41" endBytecode="41" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 246]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="237" end="237" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 237]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="240" end="240" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 240]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="bbf6d4d7782c148f4464a5e96c71dad8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.GivenBlackBox.threeBearsSaveOnCheapestAccessoriesFoam() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="threeBearsSaveOnCheapestAccessoriesFoam" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="268" end="293" startBytecode="0" endBytecode="309" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.threeBearsSaveOnCheapestAccessoriesFoam()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="278" end="278" startBytecode="56" endBytecode="56" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 278]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="268" end="268" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 268]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="271" end="271" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 271]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="3bb5a137339d0e9c170cf6a47342a687" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.GivenBlackBox.threeBearsSaveOnCheapestEqual() on exception path</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Method classname="test.java.GivenBlackBox" name="threeBearsSaveOnCheapestEqual" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="217" end="231" startBytecode="0" endBytecode="219" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java"/>
+      <Message>In method test.java.GivenBlackBox.threeBearsSaveOnCheapestEqual()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.GivenBlackBox" primary="true" start="223" end="223" startBytecode="24" endBytecode="24" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at GivenBlackBox.java:[line 223]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="217" end="217" startBytecode="0" endBytecode="0" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at GivenBlackBox.java:[line 217]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.GivenBlackBox" start="220" end="220" startBytecode="12" endBytecode="12" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at GivenBlackBox.java:[line 220]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="c21de9b902312fcef3bd4cd8ca2d1afe" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.GivenBlackBox.oneBear</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Field classname="test.java.GivenBlackBox" name="oneBear" signature="Lmain/java/BearWorkshop;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>In GivenBlackBox.java</Message>
+      </SourceLine>
+      <Message>Field test.java.GivenBlackBox.oneBear</Message>
+    </Field>
+    <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" synthetic="true">
+      <Message>In GivenBlackBox.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="687cf355dc7379eba7e68826d384d85e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.GivenBlackBox.threeBears</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Field classname="test.java.GivenBlackBox" name="threeBears" signature="Lmain/java/BearWorkshop;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>In GivenBlackBox.java</Message>
+      </SourceLine>
+      <Message>Field test.java.GivenBlackBox.threeBears</Message>
+    </Field>
+    <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" synthetic="true">
+      <Message>In GivenBlackBox.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="84670acd1becadba6ef3b11b5b1ec7a9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.GivenBlackBox.twoBears</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Field classname="test.java.GivenBlackBox" name="twoBears" signature="Lmain/java/BearWorkshop;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>In GivenBlackBox.java</Message>
+      </SourceLine>
+      <Message>Field test.java.GivenBlackBox.twoBears</Message>
+    </Field>
+    <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" synthetic="true">
+      <Message>In GivenBlackBox.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="daf0c47885b0e396959a63a6f231709e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.GivenBlackBox.twoBearsExpected</LongMessage>
+    <Class classname="test.java.GivenBlackBox" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" start="33" end="497" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>At GivenBlackBox.java:[lines 33-497]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenBlackBox</Message>
+    </Class>
+    <Field classname="test.java.GivenBlackBox" name="twoBearsExpected" signature="Ljava/lang/Double;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java">
+        <Message>In GivenBlackBox.java</Message>
+      </SourceLine>
+      <Message>Field test.java.GivenBlackBox.twoBearsExpected</Message>
+    </Field>
+    <SourceLine classname="test.java.GivenBlackBox" sourcefile="GivenBlackBox.java" sourcepath="test/java/GivenBlackBox.java" synthetic="true">
+      <Message>In GivenBlackBox.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="77aa50d270d55592aec2bacd30151084" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method names should start with a lower case letter</ShortMessage>
+    <LongMessage>The method name test.java.GivenWhiteBox.TaxTest() doesn&apos;t start with a lower case letter</LongMessage>
+    <Class classname="test.java.GivenWhiteBox" primary="true">
+      <SourceLine classname="test.java.GivenWhiteBox" start="21" end="188" sourcefile="GivenWhiteBox.java" sourcepath="test/java/GivenWhiteBox.java">
+        <Message>At GivenWhiteBox.java:[lines 21-188]</Message>
+      </SourceLine>
+      <Message>In class test.java.GivenWhiteBox</Message>
+    </Class>
+    <Method classname="test.java.GivenWhiteBox" name="TaxTest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.GivenWhiteBox" start="182" end="188" startBytecode="0" endBytecode="123" sourcefile="GivenWhiteBox.java" sourcepath="test/java/GivenWhiteBox.java"/>
+      <Message>In method test.java.GivenWhiteBox.TaxTest()</Message>
+    </Method>
+    <SourceLine classname="test.java.GivenWhiteBox" start="182" end="188" startBytecode="0" endBytecode="123" sourcefile="GivenWhiteBox.java" sourcepath="test/java/GivenWhiteBox.java" synthetic="true">
+      <Message>At GivenWhiteBox.java:[lines 182-188]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="98ee666d0396d1a62929507250b6cb01" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class names should start with an upper case letter</ShortMessage>
+    <LongMessage>The class name test.java.calculateSavingsTest doesn&apos;t start with an upper case letter</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" synthetic="true">
+      <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="62e934a0234d4631e7063d3b6b77b030" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of oneBear in test.java.calculateSavingsTest.buy2Get3ClothesDifferentPriceHiFirst() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="buy2Get3ClothesDifferentPriceHiFirst" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="65" end="83" startBytecode="0" endBytecode="272" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.buy2Get3ClothesDifferentPriceHiFirst()</Message>
+    </Method>
+    <LocalVariable name="oneBear" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from oneBear</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="72" end="72" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 72]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="65" end="65" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="68" end="68" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 68]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="940a0d3f8b464fc5d38b3ac39df7d82a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of oneBear in test.java.calculateSavingsTest.oneBearNoSavings() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearNoSavings" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="47" end="58" startBytecode="0" endBytecode="182" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearNoSavings()</Message>
+    </Method>
+    <LocalVariable name="oneBear" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from oneBear</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 53]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="47" end="47" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 47]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="50" end="50" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="86f85f8f17f5339df4ebea7282a340cf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10Clothes() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10Clothes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="280" end="298" startBytecode="0" endBytecode="281" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10Clothes()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="287" end="287" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 287]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="280" end="280" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 280]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="283" end="283" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 283]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="bd3ba4f21ac04d8c6ae7708247e4bf80" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10ClothesDown() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10ClothesDown" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="303" end="321" startBytecode="0" endBytecode="281" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10ClothesDown()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="310" end="310" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 310]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="303" end="303" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 303]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="306" end="306" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 306]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="62335356148eeb1fb5b92b68b3c9f58a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10ClothesFoam() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10ClothesFoam" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="326" end="344" startBytecode="0" endBytecode="281" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10ClothesFoam()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="333" end="333" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 333]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="326" end="326" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 326]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="329" end="329" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 329]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="dd1459cd491937a5be60fe377f653a4f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10CustomNoisemakers() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10CustomNoisemakers" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="419" end="437" startBytecode="0" endBytecode="283" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10CustomNoisemakers()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="426" end="426" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 426]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="419" end="419" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 419]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="422" end="422" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 422]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="1f2804eef7fa13d3d5dd89e3250297ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10NoisemakersBase() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10NoisemakersBase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="349" end="367" startBytecode="0" endBytecode="276" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10NoisemakersBase()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="356" end="356" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 356]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="349" end="349" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 349]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="352" end="352" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 352]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="f68fabb68fd0a65be36ea2e5c35805bc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10NoisemakersDown() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10NoisemakersDown" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="371" end="390" startBytecode="0" endBytecode="276" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10NoisemakersDown()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="378" end="378" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 378]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="371" end="371" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 371]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="374" end="374" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 374]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="4ebaa603c18ff059ba0d18a8f90f2966" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest10NoisemakersFoam() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest10NoisemakersFoam" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="395" end="414" startBytecode="0" endBytecode="276" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest10NoisemakersFoam()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="402" end="402" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 402]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="395" end="395" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 395]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="398" end="398" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 398]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="28d0c2eeb99e4b6570ce0a8070de9103" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of bears in test.java.calculateSavingsTest.oneBearTest3clothings() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="oneBearTest3clothings" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="259" end="275" startBytecode="0" endBytecode="287" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.oneBearTest3clothings()</Message>
+    </Method>
+    <LocalVariable name="bears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from bears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="266" end="266" startBytecode="29" endBytecode="29" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 266]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="259" end="259" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 259]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="262" end="262" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 262]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="f90485e81001c4ea41d166de74007814" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.calculateSavingsTest.threeBearsSaveOnCheapest() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="threeBearsSaveOnCheapest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="158" end="171" startBytecode="0" endBytecode="222" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.threeBearsSaveOnCheapest()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="164" end="164" startBytecode="27" endBytecode="27" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 164]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="158" end="158" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 158]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="161" end="161" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 161]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="51b3765eca40c21df194c81356b5f62b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.calculateSavingsTest.threeBearsSaveOnCheapestAccessories() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="threeBearsSaveOnCheapestAccessories" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="197" end="223" startBytecode="0" endBytecode="330" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.threeBearsSaveOnCheapestAccessories()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="206" end="206" startBytecode="44" endBytecode="44" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 206]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="197" end="197" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 197]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="200" end="200" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 200]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="a8a7e9d4c429d114c9e74b74406688fa" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.calculateSavingsTest.threeBearsSaveOnCheapestAccessoriesFoam() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="threeBearsSaveOnCheapestAccessoriesFoam" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="228" end="253" startBytecode="0" endBytecode="312" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.threeBearsSaveOnCheapestAccessoriesFoam()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="238" end="238" startBytecode="59" endBytecode="59" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 238]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="228" end="228" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 228]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="231" end="231" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 231]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" instanceHash="57ad9b06aab5d9e3e37372f1d1eeef6c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference in method on exception path</ShortMessage>
+    <LongMessage>Possible null pointer dereference of threeBears in test.java.calculateSavingsTest.threeBearsSaveOnCheapestEqual() on exception path</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Method classname="test.java.calculateSavingsTest" name="threeBearsSaveOnCheapestEqual" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="177" end="191" startBytecode="0" endBytecode="222" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java"/>
+      <Message>In method test.java.calculateSavingsTest.threeBearsSaveOnCheapestEqual()</Message>
+    </Method>
+    <LocalVariable name="threeBears" register="1" pc="12" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from threeBears</Message>
+    </LocalVariable>
+    <SourceLine classname="test.java.calculateSavingsTest" primary="true" start="183" end="183" startBytecode="27" endBytecode="27" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at calculateSavingsTest.java:[line 183]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="177" end="177" startBytecode="0" endBytecode="0" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at calculateSavingsTest.java:[line 177]</Message>
+    </SourceLine>
+    <SourceLine classname="test.java.calculateSavingsTest" start="180" end="180" startBytecode="15" endBytecode="15" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at calculateSavingsTest.java:[line 180]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="7388360fdbe3ca7a51433d275be5a58a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.calculateSavingsTest.oneBear</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Field classname="test.java.calculateSavingsTest" name="oneBear" signature="Lmain/java/BearWorkshop;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>In calculateSavingsTest.java</Message>
+      </SourceLine>
+      <Message>Field test.java.calculateSavingsTest.oneBear</Message>
+    </Field>
+    <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" synthetic="true">
+      <Message>In calculateSavingsTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="7a691762120d809dc38aa37e4721e8b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.calculateSavingsTest.threeBears</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Field classname="test.java.calculateSavingsTest" name="threeBears" signature="Lmain/java/BearWorkshop;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>In calculateSavingsTest.java</Message>
+      </SourceLine>
+      <Message>Field test.java.calculateSavingsTest.threeBears</Message>
+    </Field>
+    <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" synthetic="true">
+      <Message>In calculateSavingsTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="bdd825a807911906cb44833178c5d143" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.calculateSavingsTest.twoBears</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Field classname="test.java.calculateSavingsTest" name="twoBears" signature="Lmain/java/BearWorkshop;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>In calculateSavingsTest.java</Message>
+      </SourceLine>
+      <Message>Field test.java.calculateSavingsTest.twoBears</Message>
+    </Field>
+    <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" synthetic="true">
+      <Message>In calculateSavingsTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="9187b3a72652256b94be6c9140489dce" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: test.java.calculateSavingsTest.twoBearsExpected</LongMessage>
+    <Class classname="test.java.calculateSavingsTest" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" start="17" end="437" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>At calculateSavingsTest.java:[lines 17-437]</Message>
+      </SourceLine>
+      <Message>In class test.java.calculateSavingsTest</Message>
+    </Class>
+    <Field classname="test.java.calculateSavingsTest" name="twoBearsExpected" signature="Ljava/lang/Double;" isStatic="false" primary="true">
+      <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java">
+        <Message>In calculateSavingsTest.java</Message>
+      </SourceLine>
+      <Message>Field test.java.calculateSavingsTest.twoBearsExpected</Message>
+    </Field>
+    <SourceLine classname="test.java.calculateSavingsTest" sourcefile="calculateSavingsTest.java" sourcepath="test/java/calculateSavingsTest.java" synthetic="true">
+      <Message>In calculateSavingsTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="NM_CLASS_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Class names should start with an upper case letter</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Class names should be nouns, in mixed case with the first letter of each internal word capitalized. Try to keep your class names simple and descriptive. Use whole words-avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Unused field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NM_METHOD_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Method names should start with a lower case letter</ShortDescription>
+    <Details><![CDATA[
+
+  <p>
+Methods should be verbs, in mixed case with the first letter lowercase, with the first letter of each internal word capitalized.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_NULL_ON_SOME_PATH_EXCEPTION" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference in method on exception path</ShortDescription>
+    <Details><![CDATA[
+
+<p> A reference value which is null on some exception control path is
+dereferenced here.&nbsp; This may lead to a <code>NullPointerException</code>
+when the code is executed.&nbsp;
+Note that because SpotBugs currently does not prune infeasible exception paths,
+this may be a false warning.</p>
+
+<p> Also note that SpotBugs considers the default case of a switch statement to
+be an exception path, since the default case is often infeasible.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
+  <BugCode abbrev="Nm">
+    <Description>Confusing method name</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 17 Mar 2022 13:34:26 -0700" total_classes="3" referenced_classes="47" total_bugs="39" total_size="568" num_packages="1" java_version="11.0.2" vm_version="11.0.2+9" cpu_seconds="16.70" clock_seconds="8.96" peak_mbytes="270.61" alloc_mbytes="512.00" gc_seconds="0.06" priority_2="39">
+    <FileStats path="test/java/GivenBlackBox.java" bugCount="19" size="257" bugHash="fc4b023859674a9ae507ea4855fcafc2"/>
+    <FileStats path="test/java/GivenWhiteBox.java" bugCount="1" size="78" bugHash="1a1a86cb3fbb65f2ff15a9a1bb6c9709"/>
+    <FileStats path="test/java/calculateSavingsTest.java" bugCount="19" size="233" bugHash="a7682d8efdabe44189d937bd5dc0e4a3"/>
+    <PackageStats package="test.java" total_bugs="39" total_types="3" total_size="568" priority_2="39">
+      <ClassStats class="test.java.GivenBlackBox" sourceFile="GivenBlackBox.java" interface="false" size="257" bugs="19" priority_2="19"/>
+      <ClassStats class="test.java.GivenWhiteBox" sourceFile="GivenWhiteBox.java" interface="false" size="78" bugs="1" priority_2="1"/>
+      <ClassStats class="test.java.calculateSavingsTest" sourceFile="calculateSavingsTest.java" interface="false" size="233" bugs="19" priority_2="19"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1745" invocations="546" avgMicrosecondsPerInvocation="3196" maxMicrosecondsPerInvocation="198044" standardDeviationMicrosecondsPerInvocation="18178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1464" invocations="549" avgMicrosecondsPerInvocation="2667" maxMicrosecondsPerInvocation="463245" standardDeviationMicrosecondsPerInvocation="24059"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1049" invocations="47" avgMicrosecondsPerInvocation="22339" maxMicrosecondsPerInvocation="766544" standardDeviationMicrosecondsPerInvocation="110435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="516" invocations="244" avgMicrosecondsPerInvocation="2117" maxMicrosecondsPerInvocation="182827" standardDeviationMicrosecondsPerInvocation="13220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="449" invocations="47" avgMicrosecondsPerInvocation="9555" maxMicrosecondsPerInvocation="159795" standardDeviationMicrosecondsPerInvocation="31689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="377" invocations="47" avgMicrosecondsPerInvocation="8033" maxMicrosecondsPerInvocation="275796" standardDeviationMicrosecondsPerInvocation="41505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="235" invocations="47" avgMicrosecondsPerInvocation="5004" maxMicrosecondsPerInvocation="216380" standardDeviationMicrosecondsPerInvocation="31172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="233" invocations="47" avgMicrosecondsPerInvocation="4971" maxMicrosecondsPerInvocation="108307" standardDeviationMicrosecondsPerInvocation="20191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="175" invocations="506" avgMicrosecondsPerInvocation="346" maxMicrosecondsPerInvocation="99000" standardDeviationMicrosecondsPerInvocation="4569"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
