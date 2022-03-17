@@ -62,3 +62,4 @@ checkstyle {
      showProgress = true
      effort = 'max'
  }
+
