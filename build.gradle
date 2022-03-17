@@ -21,9 +21,6 @@ dependencies {
     compile files('cls/')
 }
 
-test { 
-    exclude '**/GivenBlackBox.class'
-}
 ///////////////////////////////////////////////////////////////////////
 // Configure Checkstyle
 /////////////////////////////////////////////////////////////////////
@@ -61,3 +58,4 @@ test {
 //     showProgress = true
 //     effort = 'max'
 // }
+
