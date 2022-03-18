@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.GivenWhiteBox" tests="8" skipped="0" failures="3" errors="0" timestamp="2022-03-18T18:21:11" hostname="LAPTOP-N2P7OJ01" time="0.047">
+<testsuite name="test.java.GivenWhiteBox" tests="8" skipped="0" failures="3" errors="0" timestamp="2022-03-18T18:26:15" hostname="LAPTOP-N2P7OJ01" time="0.033">
   <properties/>
-  <testcase name="checkoutSuccessful" classname="test.java.GivenWhiteBox" time="0.021"/>
+  <testcase name="checkoutSuccessful" classname="test.java.GivenWhiteBox" time="0.013"/>
   <testcase name="checkoutOneBear" classname="test.java.GivenWhiteBox" time="0.0"/>
   <testcase name="TaxTest" classname="test.java.GivenWhiteBox" time="0.0"/>
-  <testcase name="getCostSequence1" classname="test.java.GivenWhiteBox" time="0.02">
+  <testcase name="getCostSequence1" classname="test.java.GivenWhiteBox" time="0.014">
     <failure message="java.lang.AssertionError: expected:&lt;56.71&gt; but was:&lt;52.43&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;56.71&gt; but was:&lt;52.43&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -61,8 +61,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="getCostSequence2" classname="test.java.GivenWhiteBox" time="0.0"/>
-  <testcase name="getCostSequence3" classname="test.java.GivenWhiteBox" time="0.001">
+  <testcase name="getCostSequence2" classname="test.java.GivenWhiteBox" time="0.001"/>
+  <testcase name="getCostSequence3" classname="test.java.GivenWhiteBox" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;41.730000000000004&gt; but was:&lt;37.45&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;41.730000000000004&gt; but was:&lt;37.45&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

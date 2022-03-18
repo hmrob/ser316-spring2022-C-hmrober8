@@ -1,24 +1,24 @@
-Embroidery.java
- main.java.Embroidery
-Casing.java
- main.java.Casing
-Clothing.java
- main.java.Clothing
 Customer.java
  main.java.Customer
+Casing.java
+ main.java.Casing
 NoiseMaker.java
  main.java.NoiseMaker
  main.java.NoiseMaker$1
  main.java.NoiseMaker$Location
-Stuffing.java
- main.java.Stuffing
- main.java.Stuffing$1
- main.java.Stuffing$StuffingType
 Main.java
  main.java.Main
 Bear.java
  main.java.Bear
 BearWorkshopInterface.java
  main.java.BearWorkshopInterface
+Clothing.java
+ main.java.Clothing
+Embroidery.java
+ main.java.Embroidery
+Stuffing.java
+ main.java.Stuffing
+ main.java.Stuffing$1
+ main.java.Stuffing$StuffingType
 BearWorkshop.java
  main.java.BearWorkshop

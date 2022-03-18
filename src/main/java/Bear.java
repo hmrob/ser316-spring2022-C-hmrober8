@@ -1,7 +1,7 @@
 package main.java;
 
-import main.java.Stuffing.StuffingType;
 import java.util.LinkedList;
+import main.java.Stuffing.StuffingType;
 
 public class Bear implements Comparable<Bear> {
     public Casing casing;
@@ -15,9 +15,9 @@ public class Bear implements Comparable<Bear> {
     // bear has a tattoo/emroider or not (opt)
     // bear has a noisemaker (opt)
 
-/**
-* Default constructor for bear
-*/
+    /**
+    * Default constructor for bear.
+    */
     public Bear() {
         this.casing = new Casing();
         this.stuff = new Stuffing(StuffingType.BASE);
@@ -27,9 +27,9 @@ public class Bear implements Comparable<Bear> {
         price = 0;
     }
 
-/**
-* constructor with stuffing paramter
-*/
+    /**
+    * constructor with stuffing paramter.
+    */
     public Bear(StuffingType stuff) {
         this.casing = new Casing();
         this.stuff = new Stuffing(stuff);
@@ -43,9 +43,9 @@ public class Bear implements Comparable<Bear> {
         this.price = incomingPrice;
     }
 
-/**
-* Adds noisemaker object
-*/
+    /**
+    * Adds noisemaker object.
+    */
     public boolean addNoise(NoiseMaker noise) {
         if (this.noisemakers.size() >= 5) {
             return false;
@@ -59,18 +59,17 @@ public class Bear implements Comparable<Bear> {
             return true;
         }
     }
-/**
-* Implements compare method and overrides object.compareTo
-*/
-    @Override
+    /**
+    * Implements compare method and overrides object.compareTo.
+    */
     //SER316 TASK 2 SPOT-BUGS FIX’
     public int compareTo(Bear bear) {
          return Double.compare(bear.price, this.price);
     }
 
-/**
-*overrides object.equals for sorting purposes
-*/
+    /**
+    *overrides object.equals for sorting purposes.
+    */
     //SER316 TASK 2 SPOT-BUGS FIX’    
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -84,10 +83,8 @@ public class Bear implements Comparable<Bear> {
         Bear bear = (Bear) obj;
         
         return (Double.compare(bear.price, this.price) == 0) 
-        && 
-        (this.stuff) == (bear.stuff) 
-        && 
-        (this.ink.embroidText).equals(bear.ink.embroidText);
+            && (this.stuff) == (bear.stuff) 
+            && (this.ink.embroidText).equals(bear.ink.embroidText);
     }
     //SER316 TASK 2 SPOT-BUGS FIX
     public int hashCode() {
