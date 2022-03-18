@@ -171,4 +171,20 @@ public class GivenWhiteBox {
         Double expected = 31 * 1.07;
         assertEquals(expected, ans, 0.005);
     }
+	
+	@Test
+    /**
+     * test of the tax tree
+     * complete code coverage
+     * bear has 3 clothing items, a noisemaker, and an embroidery
+     */
+    public void TaxTest() {
+        oneBear = new BearWorkshop("CA");
+        
+        Double ans = oneBear.calculateTax();
+        
+        Double expected = 1.1;
+        assertEquals(expected, ans, 0.005);
+    }
 }
+
