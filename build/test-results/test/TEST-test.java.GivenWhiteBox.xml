@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.GivenWhiteBox" tests="8" skipped="0" failures="3" errors="0" timestamp="2022-03-18T03:27:19" hostname="LAPTOP-N2P7OJ01" time="0.049">
+<testsuite name="test.java.GivenWhiteBox" tests="8" skipped="0" failures="3" errors="0" timestamp="2022-03-18T18:21:11" hostname="LAPTOP-N2P7OJ01" time="0.047">
   <properties/>
-  <testcase name="checkoutSuccessful" classname="test.java.GivenWhiteBox" time="0.017"/>
-  <testcase name="checkoutOneBear" classname="test.java.GivenWhiteBox" time="0.001"/>
+  <testcase name="checkoutSuccessful" classname="test.java.GivenWhiteBox" time="0.021"/>
+  <testcase name="checkoutOneBear" classname="test.java.GivenWhiteBox" time="0.0"/>
   <testcase name="TaxTest" classname="test.java.GivenWhiteBox" time="0.0"/>
-  <testcase name="getCostSequence1" classname="test.java.GivenWhiteBox" time="0.029">
+  <testcase name="getCostSequence1" classname="test.java.GivenWhiteBox" time="0.02">
     <failure message="java.lang.AssertionError: expected:&lt;56.71&gt; but was:&lt;52.43&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;56.71&gt; but was:&lt;52.43&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
