@@ -42,7 +42,7 @@ public class calculateSavingsTest {
 	     */
 	    @Test
 	    public void oneBearNoSavings() {
-	    	// One Bear base stuffing, no saving expected
+	    	// One Bear base StuffingType, no saving expected
 	        
 	        BearWorkshop oneBear = null;
 	        try {
@@ -50,7 +50,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        oneBear.addBear(new Bear(Stuffing.stuffing.BASE)); // $30 stuffing + $1 casing -- should be no savings at all
+	        oneBear.addBear(new Bear(Stuffing.StuffingType.BASE)); // $30 StuffingType + $1 casing -- should be no savings at all
 	        oneBearExpected = 0.00; // no savings since no clothing
 	    	
 	        Double ans = oneBear.calculateSavings();
@@ -60,7 +60,7 @@ public class calculateSavingsTest {
 	    //Testing for the clothes
 	    @Test
 	    public void buy2Get3ClothesDifferentPriceHiFirst() {
-	    	// One Bear base stuffing
+	    	// One Bear base StuffingType
 	        
 	        BearWorkshop oneBear = null;
 	        try {
@@ -68,8 +68,8 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.BASE);
-	        oneBear.addBear(customBear); // $30 stuffing + $1 casing
+	        Bear customBear = new Bear(Stuffing.StuffingType.BASE);
+	        oneBear.addBear(customBear); // $30 StuffingType + $1 casing
 	        
 	        //adds $10 worth of clothing
 	        customBear.clothing.add(new Clothing(4, "test1")); 
@@ -84,7 +84,7 @@ public class calculateSavingsTest {
 	    
 	    @Test
 	    public void buy2Get3Clothes() {
-	    	// One Bear base stuffing
+	    	// One Bear base StuffingType
 	        
 	        BearWorkshop oneBear = null;
 	        try {
@@ -95,8 +95,8 @@ public class calculateSavingsTest {
 	      //complex looking but simple principle. I run this test ten times. 
 	        for (int i = 1; i < 10; i++) {
 	        	//new bear for each tests to ensure no artifacts turn weird.
-	        	Bear customBear = new Bear(Stuffing.stuffing.BASE);
-	            oneBear.addBear(customBear); // $30 stuffing + $1 casing
+	        	Bear customBear = new Bear(Stuffing.StuffingType.BASE);
+	            oneBear.addBear(customBear); // $30 StuffingType + $1 casing
 	            
 	            //add a number of clothes to the bear, all $4.
 	            for (int j = 1; j < i + 1; j++)
@@ -116,7 +116,7 @@ public class calculateSavingsTest {
 	    
 	    @Test
 	    public void buy2Get3ClothesDifferentPriceHiNum() {
-	    	// One Bear base stuffing
+	    	// One Bear base StuffingType
 	        
 	        BearWorkshop oneBear = null;
 	        try {
@@ -127,8 +127,8 @@ public class calculateSavingsTest {
 	      //complex looking but simple principle. I run this test ten times. 
 	        for (int i = 1; i < 10; i++) {
 	        	//new bear for each tests to ensure no artifacts turn weird.
-	        	Bear customBear = new Bear(Stuffing.stuffing.BASE);
-	            oneBear.addBear(customBear); // $30 stuffing + $1 casing
+	        	Bear customBear = new Bear(Stuffing.StuffingType.BASE);
+	            oneBear.addBear(customBear); // $30 StuffingType + $1 casing
 	            
 	            //add a number of clothes to the bear, the prices of which go up in increments of one
 	            for (int j = 1; j < i + 1; j++)
@@ -161,9 +161,9 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	    	
-	        threeBears.addBear(new Bear(Stuffing.stuffing.BASE)); // this is the cheapest one
-	        threeBears.addBear(new Bear(Stuffing.stuffing.DOWN));
-	        threeBears.addBear(new Bear(Stuffing.stuffing.FOAM));
+	        threeBears.addBear(new Bear(Stuffing.StuffingType.BASE)); // this is the cheapest one
+	        threeBears.addBear(new Bear(Stuffing.StuffingType.DOWN));
+	        threeBears.addBear(new Bear(Stuffing.StuffingType.FOAM));
 	        threeBearsExpected = 31.00;
 
 	        Double ans = threeBears.calculateSavings();
@@ -180,9 +180,9 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	    	
-	        threeBears.addBear(new Bear(Stuffing.stuffing.BASE)); 
-	        threeBears.addBear(new Bear(Stuffing.stuffing.BASE));
-	        threeBears.addBear(new Bear(Stuffing.stuffing.BASE));
+	        threeBears.addBear(new Bear(Stuffing.StuffingType.BASE)); 
+	        threeBears.addBear(new Bear(Stuffing.StuffingType.BASE));
+	        threeBears.addBear(new Bear(Stuffing.StuffingType.BASE));
 	        
 	        threeBearsExpected = 31.00;
 
@@ -201,17 +201,17 @@ public class calculateSavingsTest {
 	        }
 	    	
 	      //cheapest bear: $31 + $4 = $35
-	        Bear bear1 = new Bear(Stuffing.stuffing.BASE);
+	        Bear bear1 = new Bear(Stuffing.StuffingType.BASE);
 	        bear1.clothing.add(new Clothing());
 	        threeBears.addBear(bear1); 
 	        
 	        //expensive bear: $31 + $10 = $41
-	        Bear bear2 = new Bear(Stuffing.stuffing.BASE);
+	        Bear bear2 = new Bear(Stuffing.StuffingType.BASE);
 	        bear2.noisemakers.add(new NoiseMaker());
 	        threeBears.addBear(bear2);
 	 
 	        //expensive bear: $31 + $15 = 46
-	        Bear bear3 = new Bear(Stuffing.stuffing.BASE);
+	        Bear bear3 = new Bear(Stuffing.StuffingType.BASE);
 	        bear3.ink = new Embroidery("long.embroidery"); //fifteen character embroidery is $15 
 	        threeBears.addBear(bear3);
 	        
@@ -232,17 +232,17 @@ public class calculateSavingsTest {
 	        }
 	    	
 	      //expensive bear: $31 + $4 + $10 = $45
-	        Bear bear1 = new Bear(Stuffing.stuffing.BASE);
+	        Bear bear1 = new Bear(Stuffing.StuffingType.BASE);
 	        bear1.clothing.add(new Clothing());
 	        bear1.noisemakers.add(new NoiseMaker());
 	        threeBears.addBear(bear1); 
 	        
 	        //cheaper bear: $41
-	        Bear bear2 = new Bear(Stuffing.stuffing.DOWN);
+	        Bear bear2 = new Bear(Stuffing.StuffingType.DOWN);
 	        threeBears.addBear(bear2);
 	 
 	        //cheaper bear: $41
-	        Bear bear3 = new Bear(Stuffing.stuffing.DOWN);
+	        Bear bear3 = new Bear(Stuffing.StuffingType.DOWN);
 	        threeBears.addBear(bear3);
 	        
 	        //I included the price of the clothes with the bear, as it is part of the bear object. Should I not have?
@@ -262,7 +262,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.BASE); // $31
+	        Bear customBear = new Bear(Stuffing.StuffingType.BASE); // $31
 	        bears.addBear(customBear);
 
 		    customBear.clothing.add(new Clothing(4, "Hat")); //$35
@@ -283,7 +283,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.BASE); //$31
+	        Bear customBear = new Bear(Stuffing.StuffingType.BASE); //$31
 	        bears.addBear(customBear);
 
 	        //add 40 dollars worth of clothes
@@ -306,7 +306,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.DOWN); //$41
+	        Bear customBear = new Bear(Stuffing.StuffingType.DOWN); //$41
 	        bears.addBear(customBear);
 
 	        //add 40 dollars worth of clothes
@@ -329,7 +329,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.FOAM); //$51
+	        Bear customBear = new Bear(Stuffing.StuffingType.FOAM); //$51
 	        bears.addBear(customBear);
 
 	        //add 40 dollars worth of clothes
@@ -352,7 +352,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.BASE); //$31
+	        Bear customBear = new Bear(Stuffing.StuffingType.BASE); //$31
 	        bears.addBear(customBear);
 
 	        //add 100 dollars worth of noisemakers
@@ -374,7 +374,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.DOWN); //$41
+	        Bear customBear = new Bear(Stuffing.StuffingType.DOWN); //$41
 	        bears.addBear(customBear);
 
 	        //add 100 dollars worth of noisemakers
@@ -398,7 +398,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.FOAM); //$51
+	        Bear customBear = new Bear(Stuffing.StuffingType.FOAM); //$51
 	        bears.addBear(customBear);
 
 	        //add 100 dollars worth of noisemakers
@@ -422,7 +422,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.BASE); //$31
+	        Bear customBear = new Bear(Stuffing.StuffingType.BASE); //$31
 	        bears.addBear(customBear);
 
 	        //add 50 dollars worth of noisemakers
@@ -447,7 +447,7 @@ public class calculateSavingsTest {
 	        } catch (Exception e) {
 	        }
 	        
-	        Bear customBear = new Bear(Stuffing.stuffing.BASE); //$31
+	        Bear customBear = new Bear(Stuffing.StuffingType.BASE); //$31
 	        bears.addBear(customBear);
 	        
 	        //adding $10 worth of embroidery

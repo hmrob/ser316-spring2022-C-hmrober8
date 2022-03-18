@@ -19,6 +19,7 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
+    compile "com.google.guava:guava:16+"
 }
 
 test {

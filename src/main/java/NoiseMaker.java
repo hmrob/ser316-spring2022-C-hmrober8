@@ -2,9 +2,6 @@ package main.java;
 
 public class NoiseMaker {
     public double price;
-    String label;
-    String recording;
-
     Location spot;
 
     public NoiseMaker() {
@@ -14,9 +11,8 @@ public class NoiseMaker {
 /**
 *basic noisemaker constructor with variables for custom location, recording, noise, etc.
 */
+//SER316 TASK 2 SPOT-BUGS FIX’ 
     public NoiseMaker(String label, String recording, Location location) {
-        this.label = label;
-        this.recording = recording;
         this.spot = location;
         switch (location) {
             // you can assume that the price given here for the noisemakers is correct

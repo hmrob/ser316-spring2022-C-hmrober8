@@ -1,6 +1,6 @@
 package main.java;
 
-import main.java.Stuffing.stuffing;
+import main.java.Stuffing.StuffingType;
 import java.util.LinkedList;
 
 public class Bear implements Comparable<Bear> {
@@ -11,20 +11,20 @@ public class Bear implements Comparable<Bear> {
     public LinkedList<Clothing> clothing; // accessory
     public double price;
     // bear has a shell (requ)
-    // bear has stuffing (req)
+    // bear has StuffingType (req)
     // bear has a tattoo/emroider or not (opt)
     // bear has a noisemaker (opt)
 
     public Bear() {
         this.casing = new Casing();
-        this.stuff = new Stuffing(stuffing.BASE);
+        this.stuff = new Stuffing(StuffingType.BASE);
         noisemakers = new LinkedList<>();
         clothing = new LinkedList<>();
         ink = new Embroidery("");
         price = 0;
     }
 
-    public Bear(stuffing stuff) {
+    public Bear(StuffingType stuff) {
         this.casing = new Casing();
         this.stuff = new Stuffing(stuff);
         noisemakers = new LinkedList<>();
@@ -52,7 +52,30 @@ public class Bear implements Comparable<Bear> {
     }
 
     @Override
+    //SER316 TASK 2 SPOT-BUGS FIX’
     public int compareTo(Bear bear) {
-        return new Double(this.price).compareTo(bear.price);
+         return Double.compare(bear.price, this.price);
+    }
+
+    //SER316 TASK 2 SPOT-BUGS FIX’    
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        
+        if (!(obj instanceof Bear)) {
+            return false;
+        }
+        
+        Bear bear = (Bear) obj;
+        
+        return (Double.compare(bear.price, this.price) == 0) && 
+        (this.stuff) == (bear.stuff) && 
+        (this.ink.embroidText).equals(bear.ink.embroidText);
+    }
+    //SER316 TASK 2 SPOT-BUGS FIX
+    public int hashCode() {
+        assert false : "hashCode not designed";
+        return 42; // any arbitrary constant will do
     }
 }
