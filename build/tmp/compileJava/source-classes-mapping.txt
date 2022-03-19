@@ -10,15 +10,15 @@ Stuffing.java
  main.java.Stuffing
  main.java.Stuffing$1
  main.java.Stuffing$StuffingType
+Clothing.java
+ main.java.Clothing
+Main.java
+ main.java.Main
 Bear.java
  main.java.Bear
 BearWorkshopInterface.java
  main.java.BearWorkshopInterface
-Clothing.java
- main.java.Clothing
 Embroidery.java
  main.java.Embroidery
-Main.java
- main.java.Main
 BearWorkshop.java
  main.java.BearWorkshop

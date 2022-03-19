@@ -1,70 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.calculateSavingsTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2022-03-18T19:22:08" hostname="LAPTOP-N2P7OJ01" time="0.106">
+<testsuite name="test.java.calculateSavingsTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2022-03-19T03:35:40" hostname="LAPTOP-N2P7OJ01" time="0.255">
   <properties/>
-  <testcase name="oneBearTest10NoisemakersBase" classname="test.java.calculateSavingsTest" time="0.013"/>
-  <testcase name="oneBearTest10NoisemakersDown" classname="test.java.calculateSavingsTest" time="0.001"/>
+  <testcase name="oneBearTest10NoisemakersBase" classname="test.java.calculateSavingsTest" time="0.081"/>
+  <testcase name="oneBearTest10NoisemakersDown" classname="test.java.calculateSavingsTest" time="0.0"/>
   <testcase name="oneBearTest10NoisemakersFoam" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="threeBearsSaveOnCheapestAccessories" classname="test.java.calculateSavingsTest" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapestAccessories" classname="test.java.calculateSavingsTest" time="0.003"/>
   <testcase name="buy2Get3ClothesDifferentPriceHiFirst" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="oneBearTest3clothings" classname="test.java.calculateSavingsTest" time="0.0"/>
+  <testcase name="oneBearTest3clothings" classname="test.java.calculateSavingsTest" time="0.001"/>
   <testcase name="threeBearsSaveOnCheapest" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="buy2Get3Clothes" classname="test.java.calculateSavingsTest" time="0.033"/>
+  <testcase name="buy2Get3Clothes" classname="test.java.calculateSavingsTest" time="0.026"/>
   <testcase name="threeBearsSaveOnCheapestAccessoriesFoam" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="oneBearTest10Clothes" classname="test.java.calculateSavingsTest" time="0.001"/>
+  <testcase name="oneBearTest10Clothes" classname="test.java.calculateSavingsTest" time="0.0"/>
   <testcase name="oneBearTest10CustomNoisemakers" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="oneBearTest10ClothesDown" classname="test.java.calculateSavingsTest" time="0.001"/>
+  <testcase name="oneBearTest10ClothesDown" classname="test.java.calculateSavingsTest" time="0.0"/>
   <testcase name="oneBearTest10ClothesFoam" classname="test.java.calculateSavingsTest" time="0.0"/>
   <testcase name="threeBearsSaveOnCheapestEqual" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="oneBearNoSavings" classname="test.java.calculateSavingsTest" time="0.0"/>
-  <testcase name="buy2Get3ClothesDifferentPriceHiNum" classname="test.java.calculateSavingsTest" time="0.049"/>
-  <system-out><![CDATA[13.100000000000001
-14.100000000000001
-15.100000000000001
-0.0
-0.0
-0.0
-2.0
-4.0
-0.0
-0.0
-0.0
-0.0
-0.0
-4.0
-4.0
-4.0
-8.0
-8.0
-8.0
-12.0
-0.0
-0.0
-0.0
-27.1
-8.1
-28.1
-29.1
-0.0
-0.0
-0.0
-0.0
-0.0
-At 1 clothes, expecting 0.0, got 0.0
-0.0
+  <testcase name="oneBearNoSavings" classname="test.java.calculateSavingsTest" time="0.029"/>
+  <testcase name="buy2Get3ClothesDifferentPriceHiNum" classname="test.java.calculateSavingsTest" time="0.107"/>
+  <system-out><![CDATA[At 1 clothes, expecting 0.0, got 0.0
 At 2 clothes, expecting 0.0, got 0.0
-1.0
 At 3 clothes, expecting 1.0, got 1.0
-1.0
 At 4 clothes, expecting 1.0, got 1.0
-1.0
 At 5 clothes, expecting 1.0, got 1.0
-3.0
 At 6 clothes, expecting 3.0, got 3.0
-3.0
 At 7 clothes, expecting 3.0, got 3.0
-3.0
 At 8 clothes, expecting 3.0, got 3.0
-6.0
 At 9 clothes, expecting 6.0, got 6.0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
