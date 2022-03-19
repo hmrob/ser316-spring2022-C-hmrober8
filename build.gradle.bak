@@ -19,7 +19,6 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
-    compile "com.google.guava:guava:16+"
 }
 
 test {
@@ -51,13 +50,8 @@ checkstyle {
 // Configure SpotBugs
 ///////////////////////////////////////////////////////////////////////
 // To generate an HTML report instead of XML
+<<<<<<< HEAD
  spotbugsMain {
-     reports {
-         xml.enabled = false
-         html.enabled = true
-     }
- }
- spotbugsTest {
      reports {
          xml.enabled = false
          html.enabled = true
@@ -69,3 +63,18 @@ checkstyle {
      showProgress = true
      effort = 'max'
  }
+=======
+// spotbugsMain {
+//     reports {
+//         xml.enabled = false
+//         html.enabled = true
+//     }
+// }
+// spotbugs {
+//     toolVersion = '4.0.0-beta4'
+//     ignoreFailures = true
+//     showProgress = true
+//     effort = 'max'
+// }
+
+>>>>>>> 222c7218fcbaa264d4746ca2260e8524b24cfb65
