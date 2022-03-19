@@ -82,9 +82,7 @@ public class Bear implements Comparable<Bear> {
         
         Bear bear = (Bear) obj;
         
-        return (Double.compare(bear.price, this.price) == 0) 
-            && (this.stuff) == (bear.stuff) 
-            && (this.ink.embroidText).equals(bear.ink.embroidText);
+        return (Double.compare(bear.price, this.price) == 0);
     }
     //SER316 TASK 2 SPOT-BUGS FIX
     public int hashCode() {

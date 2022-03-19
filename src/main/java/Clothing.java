@@ -34,7 +34,7 @@ public class Clothing implements Comparable<Clothing> {
         
         Clothing cloth = (Clothing) obj;
         
-        return (Double.compare(cloth.price, this.price) == 0) && (this.description).equals(cloth.description);
+        return (Double.compare(cloth.price, this.price) == 0);
     }
     
     public int hashCode() {

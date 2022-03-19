@@ -36,28 +36,38 @@ public class BearWorkshop implements BearWorkshopInterface {
      */
     @Override
     public double getCost(Bear bear) {
-        Collections.sort(bear.clothing);
-        int numFree = bear.clothing.size() / 3;
-        
-        for (int i = 0; i < bear.clothing.size(); i++) {
-            Clothing clothes = bear.clothing.get(i);
-            if (i > numFree) {
-                bear.price += clothes.price;
+        double individualSavings = 0;
+            
+        // if bear costs more than $70 the embroidery is free
+        if (getRawCost(bear) < 70.00) {
+            individualSavings = individualSavings + bear.ink.price;
+        }
+        // for each two pieces of clothing, the third and cheapest one is free
+        if (bear.clothing.size() > 2) {
+            // how many free clothes
+            int expectedFreeClothes = bear.clothing.size() / 3;
+            for (int j = 0; j < expectedFreeClothes; j++) {
+                // getting lowest prices of clothes
+                double lowestValue = 100.00;
+                int lowestIndex = 0;
+                for (int k = 0; k < bear.clothing.size(); k++) {
+                    if (bear.clothing.get(k).price < lowestValue) {
+                        lowestValue = bear.clothing.get(k).price;
+                        lowestIndex = k;
+                    }
+                }
+                individualSavings = individualSavings + lowestValue;
+                bear.clothing.remove(lowestIndex);
             }
         }
 
-        for (NoiseMaker noise : bear.noisemakers) {
-            bear.price += noise.price;
+            // if a bear has ten or more accessories the bear is 10% off
+        if ((bear.clothing.size() + bear.noisemakers.size()) >= 10) {
+            individualSavings = individualSavings + (.1 * getRawCost(bear));
         }
-
-        if (bear.ink != null) {
-            bear.price += bear.ink.price;
-        }
-
-        bear.price += bear.stuff.price;
-        bear.price += bear.casing.priceModifier;
-
-        return bear.price;
+        
+        System.out.println(individualSavings);
+        return getRawCost(bear) - individualSavings;
     }
     
     // Function to get the raw cost of a bear without any discounts
