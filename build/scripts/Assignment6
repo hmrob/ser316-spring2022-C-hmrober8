@@ -18,7 +18,7 @@
 
 ##############################################################################
 ##
-##  Assignment4 start up script for UN*X
+##  Assignment6 start up script for UN*X
 ##
 ##############################################################################
 
@@ -40,10 +40,10 @@ cd "`dirname \"$PRG\"`/.." >/dev/null
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
-APP_NAME="Assignment4"
+APP_NAME="Assignment6"
 APP_BASE_NAME=`basename "$0"`
 
-# Add default JVM options here. You can also use JAVA_OPTS and ASSIGNMENT4_OPTS to pass JVM options to this script.
+# Add default JVM options here. You can also use JAVA_OPTS and ASSIGNMENT6_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS=""
 
 # Use the maximum available, or set MAX_FD != -1 to use that value.
@@ -80,7 +80,7 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/Assignment4.jar:$APP_HOME/lib/cls:$APP_HOME/lib/junit-4.12.jar:$APP_HOME/lib/hamcrest-core-1.3.jar
+CLASSPATH=$APP_HOME/lib/Assignment6.jar:$APP_HOME/lib/cls:$APP_HOME/lib/junit-4.12.jar:$APP_HOME/lib/hamcrest-core-1.3.jar
 
 
 # Determine the Java command to use to start the JVM.
@@ -180,6 +180,6 @@ save () {
 APP_ARGS=`save "$@"`
 
 # Collect all arguments for the java command, following the shell quoting and substitution rules
-eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $ASSIGNMENT4_OPTS -classpath "\"$CLASSPATH\"" main.java.Main "$APP_ARGS"
+eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $ASSIGNMENT6_OPTS -classpath "\"$CLASSPATH\"" main.java.Main "$APP_ARGS"
 
 exec "$JAVACMD" "$@"

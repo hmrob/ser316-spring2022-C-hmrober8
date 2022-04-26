@@ -17,7 +17,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  Assignment4 startup script for Windows
+@rem  Assignment6 startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -32,7 +32,7 @@ set APP_HOME=%DIRNAME%..
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and ASSIGNMENT4_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and ASSIGNMENT6_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -67,20 +67,20 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Assignment4.jar;%APP_HOME%\lib\cls;%APP_HOME%\lib\junit-4.12.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar
+set CLASSPATH=%APP_HOME%\lib\Assignment6.jar;%APP_HOME%\lib\cls;%APP_HOME%\lib\junit-4.12.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar
 
 
-@rem Execute Assignment4
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %ASSIGNMENT4_OPTS%  -classpath "%CLASSPATH%" main.java.Main %*
+@rem Execute Assignment6
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %ASSIGNMENT6_OPTS%  -classpath "%CLASSPATH%" main.java.Main %*
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable ASSIGNMENT4_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable ASSIGNMENT6_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%ASSIGNMENT4_EXIT_CONSOLE%" exit 1
+if  not "" == "%ASSIGNMENT6_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd

@@ -2,6 +2,7 @@
 plugins {
     id "com.github.spotbugs" version "4.5.1"
     id "checkstyle"
+    id 'pmd'
 }
 
 apply plugin: 'application'
@@ -13,6 +14,7 @@ mainClassName = 'main.java.Main'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
+	mavenCentral()
     jcenter()
 }
 
@@ -20,6 +22,15 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
+}
+
+apply plugin: "pmd"
+pmd {
+  ignoreFailures = true 
+  sourceSets = [sourceSets.main]
+  reportsDir = file("$project.buildDir/reports/pmd")
+  ruleSets = []
+  ruleSetConfig = resources.text.fromFile('ruleset.xml')
 }
 
 test { 
