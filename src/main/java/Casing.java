@@ -1,16 +1,17 @@
 package main.java;
 
 public class Casing {
-	double priceModifier;
+    double priceModifier;
 
-	String description;
+//SER316 TASK 2 SPOT-BUGS FIX’ 
+    //String description;
 
-	public Casing() {
-		this(1.00, "Default outer shell");
-	}
+    public Casing() {
+        this(1.00);
+    }
 
-	public Casing(double price, String descr) {
-		this.priceModifier = price;
-		this.description = descr;
-	}
+    public Casing(double price) {
+        this.priceModifier = price;
+        //this.description = descr;
+    }
 }

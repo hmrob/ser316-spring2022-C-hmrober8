@@ -122,16 +122,16 @@ public class GivenWhiteBox {
         
         newBear.clothing.add(new Clothing(4, "Hat")); //$35
 	    newBear.clothing.add(new Clothing(4, "Sunglasses")); //$39
-	    newBear.clothing.add(new Clothing(4, "Shoes")); // $43 (no discount)
+	    newBear.clothing.add(new Clothing(4, "Shoes")); // $39
 	    
-	    newBear.noisemakers.add(new NoiseMaker()); //$53
+	    newBear.noisemakers.add(new NoiseMaker()); //$49
 	    
-	    newBear.ink = (new Embroidery("Test")); //$57
+	    newBear.ink = (new Embroidery("Test")); //$53
 	    oneBear.addBear(newBear);
         
         Double ans = oneBear.checkout();
         
-        //$57 + tax
+        //$53 + tax
         Double expected = 53 * 1.07;
         assertEquals(expected, ans, 0.005);
     }

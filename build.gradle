@@ -6,6 +6,7 @@ plugins {
 
 apply plugin: 'application'
 apply plugin: 'jacoco'
+apply plugin: 'pmd'
 
 
 mainClassName = 'main.java.Main'
@@ -13,7 +14,7 @@ mainClassName = 'main.java.Main'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-	mavenCentral()
+    mavenCentral()
     jcenter()
 }
 
@@ -21,9 +22,9 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
+    compile "com.google.guava:guava:16+"
 }
 
-apply plugin: "pmd"
 pmd {
   ignoreFailures = true 
   sourceSets = [sourceSets.main]
@@ -55,16 +56,8 @@ checkstyle {
     toolVersion = "8.8"
 }
 
-
-///////////////////////////////////////////////////////////////////////
-// Configure SpotBugs
-///////////////////////////////////////////////////////////////////////
-// To generate an HTML report instead of XML
-spotbugsMain {
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
+test { 
+    exclude '**/GivenBlackBox.class'
 }
 
 ///////////////////////////////////////////////////////////////////////
