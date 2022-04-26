@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 plugins {
     id "com.github.spotbugs" version "4.5.1"
     id "checkstyle"
@@ -36,37 +37,6 @@ pmd {
 test { 
     exclude '**/GivenBlackBox.class'
 }
-///////////////////////////////////////////////////////////////////////
-// Configure Checkstyle
-/////////////////////////////////////////////////////////////////////
-apply plugin: 'checkstyle'
-checkstyle {
-//  Keep checkstyle a little quieter
-  ignoreFailures = true
-  showViolations = false
-}
-
-tasks.withType(Checkstyle) {
-  reports {
-    html.enabled = true
-    xml.enabled = false
-  }
-}
-checkstyle {
-    toolVersion = "8.8"
-}
-
-
-///////////////////////////////////////////////////////////////////////
-// Configure SpotBugs
-///////////////////////////////////////////////////////////////////////
-// To generate an HTML report instead of XML
-spotbugsMain {
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
-}
 
 ///////////////////////////////////////////////////////////////////////
 // Configure Checkstyle
@@ -87,7 +57,6 @@ tasks.withType(Checkstyle) {
 checkstyle {
     toolVersion = "8.8"
 }
-
 
 ///////////////////////////////////////////////////////////////////////
 // Configure SpotBugs
