@@ -6,7 +6,6 @@ plugins {
 
 apply plugin: 'application'
 apply plugin: 'jacoco'
-apply plugin: 'pmd'
 
 
 mainClassName = 'main.java.Main'
@@ -14,7 +13,7 @@ mainClassName = 'main.java.Main'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
-    mavenCentral()
+	mavenCentral()
     jcenter()
 }
 
@@ -22,38 +21,16 @@ repositories {
 dependencies {
     compile "junit:junit:4.12"
     compile files('cls/')
-    compile "com.google.guava:guava:16+"
+	compile "com.google.guava:guava:16+"
 }
 
+apply plugin: "pmd"
 pmd {
   ignoreFailures = true 
   sourceSets = [sourceSets.main]
   reportsDir = file("$project.buildDir/reports/pmd")
   ruleSets = []
   ruleSetConfig = resources.text.fromFile('ruleset.xml')
-}
-
-test { 
-    exclude '**/GivenBlackBox.class'
-}
-///////////////////////////////////////////////////////////////////////
-// Configure Checkstyle
-/////////////////////////////////////////////////////////////////////
-apply plugin: 'checkstyle'
-checkstyle {
-//  Keep checkstyle a little quieter
-  ignoreFailures = true
-  showViolations = false
-}
-
-tasks.withType(Checkstyle) {
-  reports {
-    html.enabled = true
-    xml.enabled = false
-  }
-}
-checkstyle {
-    toolVersion = "8.8"
 }
 
 test { 
